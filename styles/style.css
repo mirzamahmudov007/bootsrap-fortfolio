@@ -123,4 +123,63 @@ textarea {
   background: rgb(36, 38, 59);
 }
 
+#about_my_img {
+  position: absolute;
+  top: -15px;
+  left: 15%;
+  width: 300px;
+  z-index: 0;
+}
+/* 
+@media only screen and (max-width: 500px) {
+  #about_my_img {
+    position: absolute;
+    top: 0px;
+    left: 35%;
+    width: 100px;
+    z-index: 0;
+  }
+}
 
+@media only screen and (max-width: 450px) {
+  #about_my_img {
+    position: absolute;
+    top: -30px;
+    left: 35%;
+    width: 100px;
+    z-index: 0;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #about_my_img {
+    position: absolute;
+    top: -50px;
+    left: 35%;
+    width: 100px;
+    z-index: 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #about_my_img {
+    position: absolute;
+    top: -50px;
+    left: 35%;
+    width: 90px;
+    z-index: 0;
+  }
+} */
+
+.about_img {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 450px) {
+  .main {
+    background-image: url("../img/Screenshot_2024-02-22_002346-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
