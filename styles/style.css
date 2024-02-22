@@ -81,3 +81,43 @@ section {
   box-shadow: 0px 0px 24px 0px rgba(15, 16, 24, 0.42);
   background: rgb(36, 38, 59);
 }
+
+.contact-box {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  background: rgb(36, 38, 59);
+  margin-bottom: 20px;
+}
+
+.send-msg {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  width: 48%;
+  background: rgb(36, 38, 59);
+}
+
+@media only screen and (max-width: 576px) {
+  .send-msg {
+    width: 100%;
+  }
+}
+
+textarea {
+  /* bg */
+  /* position: absolute; */
+  /* width: 700px;
+  height: 210px;
+  left: 845px;
+  top: 7190px; */
+
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  width: 98.5%;
+  padding: 10px 0 0 10px;
+  background: rgb(36, 38, 59);
+}
