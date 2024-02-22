@@ -178,7 +178,7 @@ textarea {
 @media only screen and (max-width: 450px) {
   .main {
     background-image: url("../img/portfolio-removebg-preview.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-y: 85px;
