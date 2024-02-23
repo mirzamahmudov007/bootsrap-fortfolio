@@ -175,17 +175,6 @@ textarea {
   opacity: 1;
 }
 
-@media only screen and (max-width: 450px) {
-  .main {
-    background-image: url("../img/portfolio-removebg-preview.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-y: 85px;
-    background-position-x: center;
-  }
-}
-
 #submenu a {
   text-decoration: none;
   font-size: 28px;
@@ -196,8 +185,8 @@ textarea {
 .aside {
   z-index: 999;
   display: none;
-  background-color: black;
-  width: 85%;
+  background: rgb(36, 38, 59);
+  width: 100%;
   height: 100vh;
   position: fixed;
   left: 0;

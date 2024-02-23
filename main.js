@@ -40,3 +40,43 @@ close.addEventListener("click", () => {
 menu.addEventListener("click", () => {
     aside.style.display = "block";
 })
+
+let aaa = document.querySelector(".aaa");
+
+aaa.addEventListener("click", () => {
+    aside.style.display = "none";
+    console.log("a");
+
+})
+
+let aaa1 = document.querySelector(".aaa1");
+
+aaa1.addEventListener("click", () => {
+    aside.style.display = "none";
+    console.log("a");
+
+})
+
+let aaa2 = document.querySelector(".aaa2");
+
+aaa2.addEventListener("click", () => {
+    aside.style.display = "none";
+    console.log("a");
+
+})
+
+let aaa3 = document.querySelector(".aaa3");
+
+aaa3.addEventListener("click", () => {
+    aside.style.display = "none";
+    console.log("a");
+
+})
+
+let aaa4 = document.querySelector(".aaa4");
+
+aaa4.addEventListener("click", () => {
+    aside.style.display = "none";
+    console.log("a");
+
+})
