@@ -25,3 +25,18 @@ function animateText() {
 
 // 1 saniyada bir `animateText` funksiyasini chaqirish
 setInterval(animateText, 100);
+
+
+
+let menu = document.querySelector(".menu");
+let close = document.getElementById("close");
+let aside = document.getElementById("aside");
+console.log(menu);
+
+close.addEventListener("click", () => {
+    aside.style.display = "none";
+})
+
+menu.addEventListener("click", () => {
+    aside.style.display = "block";
+})

@@ -185,3 +185,21 @@ textarea {
     background-position-x: center;
   }
 }
+
+#submenu a {
+  text-decoration: none;
+  font-size: 28px;
+  padding: 20px;
+  color: white;
+}
+/* bg-dark w-75 vh-100 position-fixed start-0 top-0  */
+.aside {
+  z-index: 999;
+  display: none;
+  background-color: black;
+  width: 85%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}

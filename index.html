@@ -20,26 +20,42 @@
           class="container d-flex justify-content-md-end justify-content-between"
         >
           <button class="btn btn-close-white d-md-none">
-            <img src="./img/list.png" width="35" alt="" />
+            <img src="./img/list.png" class="menu" width="35" alt=""  />
           </button>
+
+          <div id="aside" class="aside">
+            
+            <button class="btn btn-close-white d-md-none">
+            <img id="close" src="./img/close.png" class="menu mt-3 ms-3" width="35" alt=""  />
+          </button>
+          
+          <div id="submenu" class="text-white d-flex flex-column ms-3 h3 mt-5 ">
+            <a href="#" class="d-flex  align-items-center "><img src="./img/home.png" width="40" class="btn-close-white me-3 " alt="">Home</a>
+            <a href="#about_link" class="d-flex  align-items-center "><img src="./img/id-card.png" width="40" class="btn-close-white me-3 " alt="">About</a>
+            <a href="#resume_link" class="d-flex  align-items-center "><img src="./img/cv.png" width="40" class="btn-close-white me-3 " alt="">Resume</a>
+            <a href="#portfolio_link" class="d-flex  align-items-center "><img src="./img/work.png" width="40" class="btn-close-white me-3 " alt="">Portfolio</a>
+            <a href="#contact_link" class="d-flex  align-items-center "><img src="./img/contact-us.png" width="40" class="btn-close-white me-3 " alt="">Contact</a>
+          </div>
+          </div>
+
           <ul class="nav">
             <li class="nav-item d-none d-md-flex">
               <a href="#" class="nav-link active">Home</a>
             </li>
             <li class="nav-item d-none d-md-flex">
-              <a href="#" class="nav-link">About</a>
+              <a href="#about_link" class="nav-link">About</a>
             </li>
             <li class="nav-item d-none d-md-flex">
-              <a href="#" class="nav-link">Portfolio</a>
+              <a href="#portfolio_link" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-item d-none d-md-flex">
-              <a href="#" class="nav-link">Resume</a>
+              <a href="#resume_link" class="nav-link">Resume</a>
             </li>
             <li class="nav-item d-none d-md-flex">
-              <a href="#" class="nav-link">Blog</a>
+              <a href="#blog_link" class="nav-link">Blog</a>
             </li>
             <li class="nav-item d-none d-md-flex">
-              <a href="#" class="nav-link">contact</a>
+              <a href="#contact_link" class="nav-link">contact</a>
             </li>
 
             <button class="btn btn-secondary ms-4">Download CV</button>
@@ -80,7 +96,7 @@
       </div>
     </div>
 
-    <section class="about_me">
+    <section id="about_link" class="about_me">
       <div class="container">
         <h3 id="about" class="h5 text-center text-white">About Me</h3>
         <div class="w-100 row">
@@ -137,14 +153,14 @@
         </div>
       </div>
     </section>
-    <section class="portfolio text-white">
-      <div class="container">
+    <section class="portfolio text-white ">
+      <div id="portfolio_link" class="container">
         <h3 id="about" class="h5 text-center text-white">Portfolio</h3>
         <p class="h4 text-center mb-3">Some Of My Creative Work</p>
 
         <div class="portfolio_list row justify-content-between">
-          <div class="portfolio_list_item col-lg-4 col-md-6 mb-4">
-            <div class="card-img" style="height: 220px">
+          <div class="portfolio_list_item col-lg-6 col-md-6 mb-4">
+            <div class="card-img" style="height: 300px">
               <img
                 src="./img/kkkp.png"
                 style="min-width: 100%"
@@ -216,8 +232,8 @@
             </div>
           </div>
 
-          <div class="portfolio_list_item col-lg-4 col-md-6 mb-4">
-            <div class="card-img" style="height: 220px">
+          <div class="portfolio_list_item col-lg-6 col-md-6 mb-4">
+            <div class="card-img" style="height: 300px">
               <img
                 src="./img/footTeamP.png"
                 style="min-width: 100%"
@@ -294,341 +310,16 @@
             </div>
           </div>
 
-          <div class="portfolio_list_item col-lg-4 col-md-6 mb-4">
-            <div class="card-img">
-              <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-              <div
-                class="position-absolute row bottom-0 w-100 bg-primary ms-0 p-2"
-              >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a href="">
-                    <img
-                      id="portfolio-link"
-                      src="./img/link.png"
-                      class=""
-                      width="30"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <span
-                  class="col-2 d-flex align-items-center justify-content-center"
-                  >|</span
-                >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img
-                      id="portfolio-add"
-                      src="./img/plus1.png"
-                      class=""
-                      width="40"
-                      alt=""
-                    />
-                  </a>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-                        </div>
-                        <!-- <div class="modal-body">...</div> -->
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="portfolio_list_item col-lg-4 col-md-6 mb-4">
-            <div class="card-img">
-              <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-              <div
-                class="position-absolute row bottom-0 w-100 bg-primary ms-0 p-2"
-              >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a href="">
-                    <img
-                      id="portfolio-link"
-                      src="./img/link.png"
-                      class=""
-                      width="30"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <span
-                  class="col-2 d-flex align-items-center justify-content-center"
-                  >|</span
-                >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img
-                      id="portfolio-add"
-                      src="./img/plus1.png"
-                      class=""
-                      width="40"
-                      alt=""
-                    />
-                  </a>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-                        </div>
-                        <!-- <div class="modal-body">...</div> -->
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="portfolio_list_item col-lg-4 col-md-6 mb-4">
-            <div class="card-img">
-              <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-              <div
-                class="position-absolute row bottom-0 w-100 bg-primary ms-0 p-2"
-              >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a href="">
-                    <img
-                      id="portfolio-link"
-                      src="./img/link.png"
-                      class=""
-                      width="30"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <span
-                  class="col-2 d-flex align-items-center justify-content-center"
-                  >|</span
-                >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img
-                      id="portfolio-add"
-                      src="./img/plus1.png"
-                      class=""
-                      width="40"
-                      alt=""
-                    />
-                  </a>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-                        </div>
-                        <!-- <div class="modal-body">...</div> -->
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio_list_item col-lg-4 col-md-6 mb-4">
-            <div class="card-img">
-              <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-              <div
-                class="position-absolute row bottom-0 w-100 bg-primary ms-0 p-2"
-              >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a href="">
-                    <img
-                      id="portfolio-link"
-                      src="./img/link.png"
-                      class=""
-                      width="30"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <span
-                  class="col-2 d-flex align-items-center justify-content-center"
-                  >|</span
-                >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img
-                      id="portfolio-add"
-                      src="./img/plus1.png"
-                      class=""
-                      width="40"
-                      alt=""
-                    />
-                  </a>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-                        </div>
-                        <!-- <div class="modal-body">...</div> -->
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio_list_item col-lg-4 col-md-6 mb-4">
-            <div class="card-img">
-              <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-              <div
-                class="position-absolute row bottom-0 w-100 bg-primary ms-0 p-2"
-              >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a href="">
-                    <img
-                      id="portfolio-link"
-                      src="./img/link.png"
-                      class=""
-                      width="30"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <span
-                  class="col-2 d-flex align-items-center justify-content-center"
-                  >|</span
-                >
-                <div
-                  class="col-5 d-flex justify-content-center align-items-center"
-                >
-                  <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img
-                      id="portfolio-add"
-                      src="./img/plus1.png"
-                      class=""
-                      width="40"
-                      alt=""
-                    />
-                  </a>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <img src="./img/FTC03V.jpg" class="mw-100" alt="" />
-                        </div>
-                        <!-- <div class="modal-body">...</div> -->
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>
     </section>
 
     <section class="resume text-white">
-      <div class="container">
+      <div id="resume_link" class="container">
         <h3 id="resume" class="h5 text-center text-white">Resume</h3>
         <h2 class="mb-0 mt-3">Skill & Experience</h2>
         <div class="row d-flex justify-content-between">
@@ -713,7 +404,7 @@
     </section>
 
     <section class="text-white">
-      <div class="container">
+      <div id="contact_link" class="container">
         <h3 id="about" class="h5 text-center text-white">Contact Us</h3>
         <h3 class="text-center">Get in Touch</h3>
 
