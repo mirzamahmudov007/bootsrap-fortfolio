@@ -83,36 +83,3 @@ aaa4.addEventListener("click", () => {
 
 
 
-
-//
-
-const fetch = require('node-fetch');
-
-const token = '7045068521:AAEztVWk5m8hj0BmG6gv-xbgdqojj5gG0Os';
-const chatId = '1381579135';
-
-const sendMessage = async (text) => {
-    const apiUrl = `https://api.telegram.org/bot${token}/sendMessage`;
-
-    try {
-        const response = await fetch(, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                chat_id: chatId,
-                text: text,
-            }),
-        });
-
-        const data = await response.json();
-        console.log('Telegramga muvaffaqiyatli yuborildi:', data);
-    } catch (error) {
-        console.error('Xatolik yuz berdi:', error);
-    }
-};
-
-// Matnni yuborishapiUrl
-const messageText = 'Assalomu alaykum, bu matn Telegramga yuborilgan matn!';
-sendMessage(messageText);
